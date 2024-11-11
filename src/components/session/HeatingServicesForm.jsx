@@ -4,40 +4,31 @@ import TickBox from '../../assets/TickBox.png';
 import { motion } from 'framer-motion';
 
 const HeatingServicesForm = () => {
-  const list = { hidden: { opacity: 0 } };
-  const item = { hidden: { x: -10, opacity: 1 } };
   return (
     <StyledDiv>
       <StyledDivLeft>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          animate="hidden"
-          variants={list}
-        >
-          <motion.h1 variants={item}>Отопление на дома в Бишкеке</motion.h1>
-          <h2>Профессиональные услуги по установке отопления</h2>
-          <p>
-            <img src={ok} alt="ok-img" />
-            Индивидуальный подход к каждому проекту
-          </p>
-          <p>
-            <img src={ok} alt="ok-img" />
-            Опытные специалисты по сварке и монтажу
-          </p>
-          <p>
-            <img src={ok} alt="ok-img" />
-            Использование качественных материалов и оборудования
-          </p>
-          <p>
-            <img src={ok} alt="ok-img" />
-            Гарантия качества и надежности выполненных работ
-          </p>
-          <p>
-            <img src={ok} alt="ok-img" />
-            Бесплатная консультация и оценка проекта
-          </p>
-        </motion.div>
+        <h1>Отопление на дома в Бишкеке</h1>
+        <h2>Профессиональные услуги по установке отопления</h2>
+        <p>
+          <img src={ok} alt="ok-img" />
+          Индивидуальный подход к каждому проекту
+        </p>
+        <p>
+          <img src={ok} alt="ok-img" />
+          Опытные специалисты по сварке и монтажу
+        </p>
+        <p>
+          <img src={ok} alt="ok-img" />
+          Использование качественных материалов и оборудования
+        </p>
+        <p>
+          <img src={ok} alt="ok-img" />
+          Гарантия качества и надежности выполненных работ
+        </p>
+        <p>
+          <img src={ok} alt="ok-img" />
+          Бесплатная консультация и оценка проекта
+        </p>
       </StyledDivLeft>
 
       <motion.div whileHover={{ scale: 1.1 }}>
